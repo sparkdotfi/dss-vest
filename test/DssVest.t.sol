@@ -3,7 +3,7 @@ pragma solidity 0.6.12;
 
 import "ds-test/test.sol";
 
-import {DssVest, DssVestMintable, DssVestSuckable, DssVestTransferrable} from "./DssVest.sol";
+import {DssVest, DssVestMintable, DssVestSuckable, DssVestTransferrable} from "../src/DssVest.sol";
 
 interface Hevm {
     function warp(uint256) external;

@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.6.12"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+evm_version = "istanbul"
+remappings = [
+    "ds-test/=lib/ds-test/src/",
+    "forge-std/=lib/forge-std/src/"
+]
+
+[profile.ci]
+optimizer = true
+optimizer_runs = 200
+via_ir = false
